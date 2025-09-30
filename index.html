@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neon Token DApp</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <h1>Neon Token (NEON)</h1>
+  <div id="register">
+    <h2>Registro</h2>
+    <input type="email" id="email" placeholder="Correo electrónico">
+    <button onclick="registerUser()">Registrarse</button>
+    <div id="registerMsg"></div>
+  </div>
+  <div id="wallet">
+    <h2>Conectar Wallet</h2>
+    <button onclick="connectWallet()">Conectar MetaMask</button>
+    <div id="walletAddress"></div>
+  </div>
+  <div id="balance">
+    <h2>Saldo de NEON</h2>
+    <button onclick="getBalance()">Ver saldo</button>
+    <div id="tokenBalance"></div>
+  </div>
+  <div id="messages">
+    <h2>Mensajes</h2>
+    <input type="text" id="msgTo" placeholder="Correo destino">
+    <input type="text" id="msgText" placeholder="Mensaje">
+    <button onclick="sendMessage()">Enviar</button>
+    <div id="msgStatus"></div>
+    <div id="inbox"></div>
+  </div>
+</body>
+</html>
